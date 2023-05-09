@@ -881,7 +881,7 @@ public:
         drawFastHLine(int32_t x, int32_t y, int32_t w, uint32_t color),
         fillRect(int32_t x, int32_t y, int32_t w, int32_t h, uint32_t color),
         //------------------------------add by airasz----------------------------------
-        drawBoldSmoothLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1, uint32_t bold, uint32_t color);
+        drawBoldLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1, uint32_t bold, uint32_t color);
 
     virtual int16_t drawChar(uint16_t uniCode, int32_t x, int32_t y, uint8_t font),
         drawChar(uint16_t uniCode, int32_t x, int32_t y),

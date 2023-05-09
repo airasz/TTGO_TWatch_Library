@@ -4465,9 +4465,7 @@ void TFT_eSPI::drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1, uint32_t
 ** Function name:           drawLinedrawBoldSmoothLine
 ** Description:             draw a non smooth line between 2 arbitrary points
 ***************************************************************************************/
-// Bresenham's algorithm - thx wikipedia - speed enhanced by Bodmer to use
-// an efficient FastH/V Line draw routine for line segments of 2 pixels or more
-void TFT_eSPI::drawBoldSmoothLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1, uint32_t bold, uint32_t color)
+void TFT_eSPI::drawBoldLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1, uint32_t bold, uint32_t color)
 {
     // begin_tft_write();          // Sprite class can use this function, avoiding begin_tft_write()
     inTransaction = true;
